@@ -9,6 +9,15 @@ Petit script python pour utiliser le service "notification par sms" de Free Mobi
 - pass : votre clé d’identification générée automatiquement par notre service
 ```
 
+Le resultat devrait ressembler à cela :
+
+```
+# user : votre identifiant freemobile, du type 11111111
+user = 1111111
+# pass : votre clé d’identification générée automatiquement par notre service
+pass = AAAAAAAAAAAAAAA
+```
+
 ### Utilisation
 
 Dans un shell, executer :
@@ -22,6 +31,7 @@ Attention : utiliser les guillemets simples pour passer l'argument message.
 ### Pre-requis
 
 Le service doit être activé dans l’espace abonné de freemobile.fr
+
 Avoir python installer sur votre système.
 
 ### Resultat
