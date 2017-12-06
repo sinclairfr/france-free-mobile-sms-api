@@ -32,7 +32,7 @@ Attention : utiliser les guillemets simples pour passer l'argument message.
 
 Le service doit être activé dans l’espace abonné de freemobile.fr
 
-Avoir python installer sur votre système.
+Avoir python installé sur votre système.
 
 ### Resultat
 
