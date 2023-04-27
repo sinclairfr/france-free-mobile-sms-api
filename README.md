@@ -2,20 +2,17 @@ Petit script python pour utiliser le service "notification par sms" de Free Mobi
 
 ## Avant utilisation
 
-Éditez le script en renseignant les champs user et pass avec vos propres identifiants.
-```
-- user : votre login
+Créez un fichier .freemobileconfig dans votre home directory ainsi que dans
+chaque utilisateur souhaitant utiliser le script.
 
-- pass : votre clé d’identification générée automatiquement par notre service
-```
-
-Le resultat devrait ressembler à cela :
+Le fichier devrait ressembler à ceci
 
 ```
+[id]
 # user : votre identifiant freemobile, du type 11111111
-user = 1111111
-# pass : votre clé d’identification générée automatiquement par notre service
-pass = AAAAAAAAAAAAAAA
+user = 11111111
+# key : votre clé d’identification générée automatiquement par notre service
+key = AAAAAAAAAAAAAAA
 ```
 
 ### Utilisation
@@ -28,6 +25,13 @@ python freemobile_send_sms.py 'votre message ici'
 
 Attention : utiliser les guillemets simples pour passer l'argument message.
 
+Le script peut être mis dans le repertoire /usr/bin pour un accès à tous les utilisateur de la machine.
+
+Le script possède une option -u qui permet de l'executer comme l'utilisateur désigné.
+Cela permet par exemple à un script root de notifier tous les membres d'un groupe.
+
+Le script peut aussi être inclu par un autre.
+
 ### Pre-requis
 
 Le service doit être activé dans l’espace abonné de freemobile.fr
@@ -38,9 +42,6 @@ Avoir python installé sur votre système.
 
 Si vous ne recevez pas de message d'erreur dans le shell, le message devrait avoir été correctement envoyé.
 
-## Auteur
-
-* **Mehdi FEKIH** 
 
 ## License
 
